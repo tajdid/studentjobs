@@ -1,0 +1,85 @@
+// VARIABLES
+$primary-colour: #C6373B;
+
+// CODE
+body {
+  color: #888;
+  font: 1em/1.6em Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: $primary-colour;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+  	color: #111;
+  }
+}
+
+.container {
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.logo {
+	color: #333;
+}
+
+.sidebar {
+	width: 30%;
+	float: left;
+}
+
+.info {
+	padding-top: 3.1em;
+}
+
+.content {
+	width: 65%;
+	float: right;
+}
+
+.job {
+	
+	padding-bottom: 1em;
+	border-bottom: 1px solid #eee;
+
+	.job-title {
+		margin-bottom: 0.4em;
+	}
+}
+
+.add-job {
+	padding: 1em 0;
+	a {
+		border: 1px solid $primary-colour;
+		border-radius: 6px;
+		padding: 10px 15px;
+
+		&:hover {
+			border: 1px solid #111;
+		}
+	}
+}
+
+.pagination {
+	span {
+		margin: 0 0.5em 0 0;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.container {
+		padding: 0 20px;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.content {
+		width: 100%;
+	}
+}

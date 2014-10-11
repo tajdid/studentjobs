@@ -1,0 +1,23 @@
+<div class="container">
+	<aside class="sidebar">
+		<p class="info">Looking for work placement based around Northern Ireland? Well look no further.</p>
+
+		<p class="copyright">
+			Created by <a href="https://twitter.com/tajdidr">@tajdidr</a>
+		</p>
+	</aside>
+
+	<main class="content">
+		<h1 class="logo">Student Jobs</h1>
+
+		<% @jobs.each do |job| %>
+		  <div class="job">
+		    <h2 class="job-title"><%= link_to job.title, job.url %></h2>
+		    <span class="job-company"><%= job.company %></span>
+		  </div>
+		<% end %>
+
+		<p class="add-job"><%= link_to "Add a job", new_job_path %></p>
+		<p><%= paginate @jobs %></p>
+	</main>
+</div>

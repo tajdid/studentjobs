@@ -1,0 +1,3542 @@
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateJobs (20141010213351)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "company" varchar(255), "url" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141010213351"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:42:37 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 756ms (Views: 727.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:42:39 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:42:39 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:42:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:42:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:42:39 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:42:39 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:42:39 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:46:45 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:46:45 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:46:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:46:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:46:45 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:46:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:46:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:46:45 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:46:47 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:46:47 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:46:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:46:47 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:46:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:46:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:46:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:46:47 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:47:02 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:47:02 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:47:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:02 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:02 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:02 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:02 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:47:04 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:47:04 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:47:04 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:04 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:04 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:47:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 105ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:47:38 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:47:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:38 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:38 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:47:40 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:47:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:47:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:40 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:47:40 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:47:53 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (61.3ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= simple_form_for @job do |form| %>
+    2:   <%= form.input :title, label: "Job title" %>
+    3:   <%= form.input :company, label: "Your company" %>
+    4:   <%= form.input :url, label: "Link to job" %>
+  app/views/jobs/index.html.erb:1:in `_app_views_jobs_index_html_erb__2714621807961442045_70233322222080'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:48:01 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:01 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:48:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:01 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:48:01 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:01 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:48:40 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:48:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:48:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:40 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:40 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-10 22:48:54 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:48:54 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:54 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:48:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:54 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:54 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:48:54 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:49:13 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= simple_form_for @job do |form| %>
+    2:   <%= form.input :title, label: "Job title" %>
+    3:   <%= form.input :company, label: "Your company" %>
+    4:   <%= form.input :url, label: "Link to job" %>
+  app/views/jobs/index.html.erb:1:in `_app_views_jobs_index_html_erb__2714621807961442045_70233320138960'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:49:33 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:49:33 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:49:33 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:49:33 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:49:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:49:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:49:33 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:49:33 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-10 22:51:30 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= simple_form_for @job do |form| %>
+    2:   <%= form.input :title, label: "Job title" %>
+    3:   <%= form.input :company, label: "Your company" %>
+    4:   <%= form.input :url, label: "Link to job" %>
+  app/views/jobs/index.html.erb:1:in `_app_views_jobs_index_html_erb__2714621807961442045_70233328717840'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:51:33 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= simple_form_for @job do |form| %>
+    2:   <%= form.input :title, label: "Job title" %>
+    3:   <%= form.input :company, label: "Your company" %>
+    4:   <%= form.input :url, label: "Link to job" %>
+  app/views/jobs/index.html.erb:1:in `_app_views_jobs_index_html_erb__2714621807961442045_70233328717840'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:51:55 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:51:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:51:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:51:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:51:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:51:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:51:55 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:51:55 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:52:39 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:52:39 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:52:39 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:52:39 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:52:39 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:52:39 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:52:39 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:52:39 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:52:42 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:52:42 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:52:42 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:52:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:52:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:52:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:52:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:52:42 +0100
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2014-10-10 22:53:10 +0100
+Processing by JobsController#new as HTML
+  Rendered jobs/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= simple_form_for @job do |form| %>
+    2:   <%= form.input :title, label: "Job title" %>
+    3:   <%= form.input :company, label: "Your company" %>
+    4:   <%= form.input :url, label: "Link to job" %>
+  app/views/jobs/new.html.erb:1:in `_app_views_jobs_new_html_erb__3497087605617556165_70233331832440'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.0ms)
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2014-10-10 22:53:16 +0100
+Processing by JobsController#new as HTML
+  Rendered jobs/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= simple_form_for @job do |form| %>
+    2:   <%= form.input :title, label: "Job title" %>
+    3:   <%= form.input :company, label: "Your company" %>
+    4:   <%= form.input :url, label: "Link to job" %>
+  app/views/jobs/new.html.erb:1:in `_app_views_jobs_new_html_erb__3497087605617556165_70233331832440'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2014-10-10 22:54:21 +0100
+Processing by JobsController#new as HTML
+  Rendered jobs/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:54:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:54:21 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:54:21 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:54:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:54:21 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:54:21 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:54:21 +0100
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-10-10 22:55:07 +0100
+
+AbstractController::ActionNotFound (The action 'create' could not be found for JobsController):
+  actionpack (4.1.6) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.5ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-10-10 22:57:23 +0100
+
+SyntaxError (/Users/tajdid/Documents/Websites/Rails/jobsboard/app/controllers/jobs_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/jobs_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-10-10 22:57:28 +0100
+
+SyntaxError (/Users/tajdid/Documents/Websites/Rails/jobsboard/app/controllers/jobs_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/jobs_controller.rb:16: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-10-10 22:58:07 +0100
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JQXeuZKfuTNBZWmvvQad7wBUC+qgy/alH8aQ1SDidXk=", "job"=>{"title"=>"UX Designer", "company"=>"Kreative", "url"=>"http://www.tajdidrahman.co.uk"}, "commit"=>"Create Job"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mJob Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "jobs"  WHERE "jobs"."url" = 'http://www.tajdidrahman.co.uk' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "jobs" ("company", "created_at", "title", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["company", "Kreative"], ["created_at", "2014-10-10 21:58:07.535850"], ["title", "UX Designer"], ["updated_at", "2014-10-10 21:58:07.535850"], ["url", "http://www.tajdidrahman.co.uk"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:58:07 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:58:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:07 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:58:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:07 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:07 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:58:26 +0100
+Processing by JobsController#index as HTML
+  Rendered jobs/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:58:26 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:58:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:26 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:26 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-10 22:58:50 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.4ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered jobs/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:50 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:50 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-10 22:58:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-10 22:58:50 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-10 22:58:50 +0100
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2014-10-10 22:59:08 +0100
+Processing by JobsController#new as HTML
+  Rendered jobs/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 93ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 11:50:34 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.5ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered jobs/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 144ms (Views: 123.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 11:50:34 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 11:50:34 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 11:50:34 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 11:50:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 11:50:34 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 11:50:34 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 11:50:34 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 11:51:17 +0100
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 11:51:17 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 11:51:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 11:51:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 11:51:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 11:51:17 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 11:51:17 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 11:51:17 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 11:51:56 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered jobs/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 11:51:56 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 11:51:56 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 11:51:56 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 11:51:56 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 11:51:56 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 11:51:56 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 11:51:56 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 11:52:07 +0100
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:07 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 11:52:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:07 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 11:52:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:07 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:07 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 11:52:23 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT "jobs".* FROM "jobs"
+  Rendered jobs/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 86ms (Views: 85.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:23 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 11:52:23 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 11:52:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:23 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:23 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 11:52:55 +0100
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.1ms)[0m  [1mSELECT "jobs".* FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 11:52:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 11:52:55 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 11:52:55 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 11:55:20 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.3ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  Rendered jobs/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 74ms (Views: 32.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 11:55:20 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 11:55:20 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 11:55:20 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 11:55:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 11:55:20 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 11:55:20 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 11:55:20 +0100
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2014-10-11 11:55:22 +0100
+Processing by JobsController#new as HTML
+  Rendered jobs/new.html.erb within layouts/application (87.1ms)
+Completed 200 OK in 116ms (Views: 115.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-10-11 11:56:01 +0100
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqxuPbYrlSMsA7hQHDKQ5z/HVYGElPuCqOfcFtSTfdA=", "job"=>{"title"=>"Ruby Developer", "company"=>"Rehab Studios", "url"=>"http://www.tajdidrahman.co.uk"}, "commit"=>"Create Job"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mJob Exists (0.2ms)[0m  SELECT  1 AS one FROM "jobs"  WHERE "jobs"."url" = 'http://www.tajdidrahman.co.uk' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered jobs/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 60ms (Views: 47.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 11:56:01 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 11:56:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 11:56:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 11:56:01 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 11:56:01 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 11:56:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 11:56:01 +0100
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-10-11 11:56:14 +0100
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqxuPbYrlSMsA7hQHDKQ5z/HVYGElPuCqOfcFtSTfdA=", "job"=>{"title"=>"Ruby Developer", "company"=>"Rehab Studios", "url"=>"http://www.tajdid.me.uk"}, "commit"=>"Create Job"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mJob Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "jobs"  WHERE "jobs"."url" = 'http://www.tajdid.me.uk' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "jobs" ("company", "created_at", "title", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["company", "Rehab Studios"], ["created_at", "2014-10-11 10:56:14.546072"], ["title", "Ruby Developer"], ["updated_at", "2014-10-11 10:56:14.546072"], ["url", "http://www.tajdid.me.uk"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 11:56:14 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  Rendered jobs/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 11:56:14 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 11:56:14 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 11:56:14 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 11:56:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 11:56:14 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 11:56:14 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 11:56:14 +0100
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2014-10-11 11:57:31 +0100
+Processing by JobsController#new as HTML
+  Rendered jobs/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-10-11 11:58:14 +0100
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqxuPbYrlSMsA7hQHDKQ5z/HVYGElPuCqOfcFtSTfdA=", "job"=>{"title"=>"Interaction Designer", "company"=>"Eye Killer", "url"=>"http://eyekiller.co.uk"}, "commit"=>"Create Job"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mJob Exists (0.1ms)[0m  SELECT  1 AS one FROM "jobs"  WHERE "jobs"."url" = 'http://eyekiller.co.uk' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "jobs" ("company", "created_at", "title", "updated_at", "url") VALUES (?, ?, ?, ?, ?)[0m  [["company", "Eye Killer"], ["created_at", "2014-10-11 10:58:14.968396"], ["title", "Interaction Designer"], ["updated_at", "2014-10-11 10:58:14.968396"], ["url", "http://eyekiller.co.uk"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 11:58:14 +0100
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0[0m
+  Rendered jobs/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 11:58:15 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 11:58:15 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 11:58:15 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 11:58:15 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 11:58:15 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 11:58:15 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 11:58:15 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 12:00:32 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 84ms (Views: 82.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 12:00:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 12:00:32 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 12:00:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 12:00:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 12:00:32 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 12:00:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 12:00:32 +0100
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2014-10-11 12:00:35 +0100
+Processing by JobsController#new as HTML
+  Rendered jobs/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-10-11 12:00:54 +0100
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqxuPbYrlSMsA7hQHDKQ5z/HVYGElPuCqOfcFtSTfdA=", "job"=>{"title"=>"Graphic Designer", "company"=>"1440 Design", "url"=>"http://1440.com"}, "commit"=>"Create Job"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mJob Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "jobs"  WHERE "jobs"."url" = 'http://1440.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "jobs" ("company", "created_at", "title", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["company", "1440 Design"], ["created_at", "2014-10-11 11:00:54.416261"], ["title", "Graphic Designer"], ["updated_at", "2014-10-11 11:00:54.416261"], ["url", "http://1440.com"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 12:00:54 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 33.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 12:00:54 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 12:00:54 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 12:00:54 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 12:00:54 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 12:00:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 12:00:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 12:00:54 +0100
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2014-10-11 12:00:57 +0100
+Processing by JobsController#new as HTML
+  Rendered jobs/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-10-11 12:01:44 +0100
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqxuPbYrlSMsA7hQHDKQ5z/HVYGElPuCqOfcFtSTfdA=", "job"=>{"title"=>"Front-end Developer", "company"=>"Creative Nerds", "url"=>"http://creativenerds.org"}, "commit"=>"Create Job"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mJob Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "jobs"  WHERE "jobs"."url" = 'http://creativenerds.org' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "jobs" ("company", "created_at", "title", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["company", "Creative Nerds"], ["created_at", "2014-10-11 11:01:44.092487"], ["title", "Front-end Developer"], ["updated_at", "2014-10-11 11:01:44.092487"], ["url", "http://creativenerds.org"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 12:01:44 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 12:01:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 12:01:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 12:01:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 12:01:44 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 12:01:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 12:01:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 12:01:44 +0100
+
+
+Started GET "/jobs/new" for 127.0.0.1 at 2014-10-11 12:02:37 +0100
+Processing by JobsController#new as HTML
+  Rendered jobs/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/jobs" for 127.0.0.1 at 2014-10-11 12:02:49 +0100
+Processing by JobsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqxuPbYrlSMsA7hQHDKQ5z/HVYGElPuCqOfcFtSTfdA=", "job"=>{"title"=>"App Developer", "company"=>"Kainos", "url"=>"http://kainos.co.uk"}, "commit"=>"Create Job"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mJob Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "jobs"  WHERE "jobs"."url" = 'http://kainos.co.uk' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "jobs" ("company", "created_at", "title", "updated_at", "url") VALUES (?, ?, ?, ?, ?)  [["company", "Kainos"], ["created_at", "2014-10-11 11:02:49.896134"], ["title", "App Developer"], ["updated_at", "2014-10-11 11:02:49.896134"], ["url", "http://kainos.co.uk"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-11 12:02:49 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 91ms (Views: 90.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 12:02:50 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 12:02:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 12:02:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 12:02:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 12:02:50 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 12:02:50 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 12:02:50 +0100
+
+
+Started GET "/jobs?page=2" for 127.0.0.1 at 2014-10-11 12:02:54 +0100
+Processing by JobsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 12:02:57 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs?page=2" for 127.0.0.1 at 2014-10-11 12:03:01 +0100
+Processing by JobsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 12:09:10 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 12:09:10 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 12:09:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 12:09:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 12:09:10 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 12:09:10 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 12:09:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 12:09:10 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 12:09:27 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 12:09:27 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 12:09:27 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 12:09:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 12:09:27 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 12:09:27 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 12:09:27 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 12:09:27 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 12:15:07 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 12:15:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 12:15:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:08 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:08 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 12:15:35 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:35 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 12:15:35 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 12:15:35 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:35 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:35 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:35 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:35 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 12:15:44 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 12:15:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:44 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 12:15:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 12:15:44 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:09:18 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:09:19 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:09:19 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:09:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:09:19 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:09:19 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:09:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:09:19 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:11:27 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:11:28 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:11:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:11:28 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:11:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:11:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:11:28 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:11:28 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:11:53 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 94ms (Views: 92.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:11:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:11:54 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:11:54 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:11:54 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:11:54 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:11:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:11:54 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:12:18 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:12:18 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:12:18 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:12:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:12:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:12:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:12:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:12:18 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:13:21 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:13:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:13:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:13:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:13:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:13:22 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:13:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:13:22 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:13:48 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:13:48 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:13:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:13:48 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:13:48 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:13:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:13:48 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:13:48 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:14:36 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:14:36 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:14:36 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:14:36 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:14:36 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:14:36 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:14:36 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:14:36 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:14:53 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:14:53 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:14:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:14:53 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:14:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:14:53 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:14:53 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:14:53 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:15:02 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:15:02 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:15:02 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:02 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:02 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:02 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:15:04 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:15:04 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:15:04 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:04 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:04 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:15:17 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:15:17 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:17 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:15:17 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:17 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:15:31 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 90ms (Views: 88.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:15:31 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:15:31 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:15:31 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:17:18 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:17:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:17:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:17:18 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:17:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:17:18 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:17:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:17:18 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:17:53 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:17:53 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:17:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:17:53 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:17:53 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:17:53 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:17:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:17:53 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:17:53 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:18:38 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:18:38 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:18:38 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:18:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:18:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:18:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:18:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:18:38 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:18:38 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:19:09 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 56ms (Views: 54.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:19:09 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:09 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:19:09 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:19:09 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:09 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:09 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:09 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:09 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:19:22 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 108ms (Views: 106.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:19:22 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:19:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:19:22 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:22 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:19:34 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:19:34 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:19:34 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:19:34 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:34 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:34 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:34 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:19:34 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:20:16 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.3ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:16 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:16 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:16 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:16 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:16 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:16 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:16 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:20:27 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:28 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:28 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:28 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:28 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:28 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:20:36 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:36 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:36 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:36 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:36 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:36 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:36 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:36 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:36 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:20:44 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:44 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:44 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:44 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:44 +0100
+
+
+Started GET "/jobs?page=2" for 127.0.0.1 at 2014-10-11 13:20:56 +0100
+Processing by JobsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 5
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 73ms (Views: 71.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/jobs?page=2" for 127.0.0.1 at 2014-10-11 13:20:57 +0100
+Processing by JobsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:57 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:57 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:57 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:57 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:20:57 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:57 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:57 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:20:57 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:21:00 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 82ms (Views: 81.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:21:18 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:19 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:19 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:19 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:19 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:19 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:19 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:21:36 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:36 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:36 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:36 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:36 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:36 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:36 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:36 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:36 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:21:47 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:47 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:47 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:47 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:47 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:21:55 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:55 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:21:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:55 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:21:55 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:22:03 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:22:03 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:22:03 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:03 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:03 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:03 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:22:03 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:03 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:22:10 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:22:10 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:22:10 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:22:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:10 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:10 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:10 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:22:21 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 99ms (Views: 98.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:21 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:22:21 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:21 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:22:21 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:22:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:21 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:21 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:22:21 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:23:52 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:23:52 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:23:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:23:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:23:52 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:23:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:23:52 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:23:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:23:52 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:24:20 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.3ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:24:20 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:24:20 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:24:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:24:20 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:24:20 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:24:20 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:24:20 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:24:20 +0100
+
+
+Started GET "/jobs?page=2" for 127.0.0.1 at 2014-10-11 13:25:48 +0100
+Processing by JobsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:25:52 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 84ms (Views: 82.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:30:51 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:30:51 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:30:51 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:31:32 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:31:32 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:31:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:31:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:31:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:31:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:31:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:31:32 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:31:32 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:31:42 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 102ms (Views: 100.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:31:42 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:31:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:31:42 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:31:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:31:42 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:31:42 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:31:42 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:31:42 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:32:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:32:08 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:32:08 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:33:40 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:33:40 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:33:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:33:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:33:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:33:40 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:33:40 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:33:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:33:40 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:33:55 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:33:55 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:33:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:33:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:33:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:33:55 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:33:55 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:33:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:33:55 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:34:13 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:34:13 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:34:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:34:13 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:13 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:13 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:13 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:34:30 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:34:30 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:34:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:30 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:34:30 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:30 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:30 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:30 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:30 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:34:38 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:34:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:38 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:34:38 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:34:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:38 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:34:38 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:35:07 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 101ms (Views: 99.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:35:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:35:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:35:08 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:35:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:35:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:35:08 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:35:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:35:08 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:35:52 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:35:52 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:35:52 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:35:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:35:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:35:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:35:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:35:52 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:35:52 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:36:15 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:36:15 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:36:15 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:36:15 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:36:15 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:36:15 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:36:15 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:36:15 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:36:15 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:36:38 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:36:38 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:36:38 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:36:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:36:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:36:38 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:36:38 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:36:38 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:36:38 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:37:05 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:06 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:06 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:06 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:06 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:06 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:06 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:06 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:06 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:37:17 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:18 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:18 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:18 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:37:26 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:26 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:26 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:26 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:26 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:37:37 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:37 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:37 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:37 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:37 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:37 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:37 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:37 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:37 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:37:58 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 102ms (Views: 100.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:58 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:58 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:37:58 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:58 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:58 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:37:58 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:38:10 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:38:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:38:10 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:38:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:38:10 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:38:10 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:38:10 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:38:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:38:10 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:39:32 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (Invalid CSS after "}": expected selector or at-rule, was "}"
+  (in /Users/tajdid/Documents/Websites/Rails/jobsboard/app/assets/stylesheets/jobs.css.scss:77)):
+    2: <html>
+    3: <head>
+    4:   <title>Student Jobs</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/jobs.css.scss:77
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1154350122248593189_70106610079680'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.0ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:40:30 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (Invalid CSS after "@media screen and ": expected media expression (e.g. (min-device-width: 800px)), was "{max-width: 640..."
+  (in /Users/tajdid/Documents/Websites/Rails/jobsboard/app/assets/stylesheets/jobs.css.scss:67)):
+    2: <html>
+    3: <head>
+    4:   <title>Student Jobs</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/jobs.css.scss:67
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1154350122248593189_70106610079680'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.5ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:40:54 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 65ms (Views: 63.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:40:54 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:40:54 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:40:54 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:40:54 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:40:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:40:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:40:54 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:40:54 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:41:11 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 98ms (Views: 96.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:41:11 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:41:11 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:41:11 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:11 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:11 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:11 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:11 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:11 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:41:12 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:41:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:13 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:13 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:41:13 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:13 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:41:13 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:13 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:13 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:41:33 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.3ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 106ms (Views: 104.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:41:33 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:41:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:33 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:41:33 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:33 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:33 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:41:33 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:42:11 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:42:12 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:42:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:42:12 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:12 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:12 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:42:31 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:42:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:31 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:42:31 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:42:31 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:31 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:42:40 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:42:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:42:41 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:42:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:41 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:42:41 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:49:12 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 83ms (Views: 81.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:49:12 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:49:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:49:12 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:49:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:49:12 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:49:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:49:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:49:12 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:50:01 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:01 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:01 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:01 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:01 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:01 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:01 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:50:16 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 105ms (Views: 103.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:16 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:16 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:16 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:16 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:16 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:16 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:16 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:50:17 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.1ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:18 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:18 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:18 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:50:36 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 105ms (Views: 103.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:36 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:36 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:36 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:36 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 13:50:36 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:36 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:36 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 13:50:36 +0100
+
+
+Started GET "/jobs?page=2" for 127.0.0.1 at 2014-10-11 13:51:55 +0100
+Processing by JobsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mJob Load (0.1ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:51:59 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/jobs?page=2" for 127.0.0.1 at 2014-10-11 13:59:21 +0100
+Processing by JobsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mJob Load (0.1ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 13:59:25 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 14:01:46 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 14:01:47 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 14:01:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 14:01:47 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 14:01:47 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 14:01:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 14:01:47 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 14:01:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 14:01:47 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 14:02:17 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 14:02:17 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 14:02:17 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 14:02:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 14:02:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 14:02:17 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 14:02:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 14:02:17 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 14:02:17 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 14:06:02 +0100
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 14:06:02 +0100
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 14:06:02 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 14:06:02 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 14:06:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 14:06:02 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 14:06:02 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 14:06:02 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 14:06:02 +0100
+
+
+Started GET "/jobs" for 127.0.0.1 at 2014-10-11 14:24:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JobsController#index as HTML
+  [1m[35mJob Load (0.2ms)[0m  SELECT  "jobs".* FROM "jobs"  LIMIT 5 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "jobs"[0m
+  Rendered jobs/index.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 184ms (Views: 162.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jobs.css?body=1" for 127.0.0.1 at 2014-10-11 14:24:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-11 14:24:18 +0100
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-10-11 14:24:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-11 14:24:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-11 14:24:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-11 14:24:18 +0100
+
+
+Started GET "/assets/jobs.js?body=1" for 127.0.0.1 at 2014-10-11 14:24:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-11 14:24:18 +0100
